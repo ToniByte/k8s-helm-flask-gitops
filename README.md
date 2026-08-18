@@ -117,11 +117,11 @@ helm upgrade --install flask-app ./charts/flask-app
 ```
   
 Check resources:  
+
+```bash
 kubectl get pods
 kubectl get svc
 helm list
-```bash
-
 ```
 
 Access the app locally:  
@@ -219,4 +219,4 @@ This is the same core flow used by many production teams, simplified for a portf
 
 ## License  
 
-Educational / portfolio project.
+Educational / portfolio project. 
