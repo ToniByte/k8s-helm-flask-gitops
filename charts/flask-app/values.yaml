@@ -6,10 +6,9 @@ image:
   pullPolicy: Always
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 80
   targetPort: 5000
-  nodePort: 30080
 
 nameOverride: flask-app
 fullnameOverride: flask-app
