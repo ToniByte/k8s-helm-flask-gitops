@@ -1,8 +1,12 @@
-replicaCount: 4
+replicaCount: 2
 
 image:
   repository: ghcr.io/tonibyte/flask-app
+<<<<<<< HEAD
   tag: "7ddc9c6"
+=======
+  tag: "latest"
+>>>>>>> a21fe8d (feat: add Ingress)
   pullPolicy: Always
 
 service:
@@ -10,5 +14,19 @@ service:
   port: 80
   targetPort: 5000
 
-nameOverride: flask-app
-fullnameOverride: flask-app
+ingress:
+  enabled: true
+  className: traefik
+  host: tonibyte.duckdns.org
+  tls: true
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 300m
+    memory: 256Mi
+
+env:
+  APP_MODE: production
