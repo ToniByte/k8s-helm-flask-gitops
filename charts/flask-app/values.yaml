@@ -2,11 +2,7 @@ replicaCount: 2
 
 image:
   repository: ghcr.io/tonibyte/flask-app
-<<<<<<< HEAD
   tag: "7ddc9c6"
-=======
-  tag: "latest"
->>>>>>> a21fe8d (feat: add Ingress)
   pullPolicy: Always
 
 service:
