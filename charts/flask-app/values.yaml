@@ -2,7 +2,7 @@ replicaCount: 4
 
 image:
   repository: ghcr.io/tonibyte/flask-app
-  tag: latest
+  tag: "7ddc9c6"
   pullPolicy: Always
 
 service:
